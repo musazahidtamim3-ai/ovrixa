@@ -47,20 +47,17 @@ export default function HeroBanner() {
                     autoplay={{ delay: 4500, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
                     loop={true}
-                    className="w-full h-[80vh] sm:h-[70vh] min-h-[500px] max-h-[650px] ovrixa-swiper"
+                    className="w-full h-[80vh] sm:h-[70vh] min-h-125 max-h-162.5 ovrixa-swiper"
                >
                     {slides.map((slide) => (
                          <SwiperSlide key={slide.id} className="relative w-full h-full">
-                              {/* Background Image */}
                               <div
                                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                                    style={{ backgroundImage: `url(${slide.image})` }}
                               />
 
-                              {/* Dark Overlay for Text Contrast */}
                               <div className="absolute inset-0 bg-black/65" />
 
-                              {/* Centered Slide Content */}
                               <div className="relative z-10 max-w-4xl mx-auto h-full px-4 flex flex-col items-center justify-center text-center">
                                    <div className="space-y-4">
 

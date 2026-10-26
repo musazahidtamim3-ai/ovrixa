@@ -26,7 +26,6 @@ export default function TrustMarquee() {
           },
      ];
 
-     // Seamless loop-এর জন্য আইটেমগুলো ডুপ্লিকেট করে নেওয়া হয়েছে
      const marqueeList = [...items, ...items, ...items];
 
      return (
@@ -43,23 +42,22 @@ export default function TrustMarquee() {
                     ))}
                </div>
 
-               {/* Smooth Infinite Marquee Animation Style */}
                <style jsx global>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(-33.33%);
-          }
-        }
-        .animate-marquee {
-          animation: marquee 25s linear infinite;
-        }
-        .animate-marquee:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
+                    @keyframes marquee {
+                         0% {
+                              transform: translateX(0%);
+                         }
+                         100% {
+                              transform: translateX(-33.33%);
+                         }
+                    }
+                    .animate-marquee {
+                         animation: marquee 25s linear infinite;
+                    }
+                    .animate-marquee:hover {
+                         animation-play-state: paused;
+                    }
+               `}</style>
           </div>
      );
 }

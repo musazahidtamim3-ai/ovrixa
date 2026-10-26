@@ -7,7 +7,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { FiHeart, FiShoppingBag, FiStar, FiChevronLeft, FiChevronRight, FiPlus } from 'react-icons/fi';
+import { FiHeart, FiStar, FiChevronLeft, FiChevronRight, FiPlus } from 'react-icons/fi';
 
 export default function BestSellerSection() {
      const products = [
@@ -52,7 +52,7 @@ export default function BestSellerSection() {
                name: 'Ovrixa Velocity Turf Cleats',
                category: 'Footwear',
                price: '৳2,200',
-               originalPrice: '৳3,5000',
+               originalPrice: '৳3,500', // 👈 অতিরিক্ত শূন্য ঠিক করা হয়েছে
                rating: 4.9,
                reviews: 29,
                badge: 'TURF READY',
